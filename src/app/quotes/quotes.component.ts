@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   quotes: Quote[]=[
-    new Quote('Nelson Mandela','The greatest glory in living lies not in never falling, but in rising every time we fall.','Emelda Perez'),
-    new Quote('Steve Jobs','Your time is limited, so do nott waste it living someone else life.','Samantha Lopez'),
-    new Quote('Walt Disney','The way to get started is to quit talking and begin doing.','Debbie Indah'),
+    new Quote('First Quote','"The greatest glory in living lies not in never falling, but in rising every time we fall."','Nelson Mandela','Emelda Perez'),
+    new Quote('Second Quote','"Your time is limited, so do nott waste it living someone else life."','Steve Jobs','Samantha Lopez'),
+    new Quote('Third Quote','"The way to get started is to quit talking and begin doing."','Walt Disney','Debbie Indah'),
   ]
 
   constructor() { }
