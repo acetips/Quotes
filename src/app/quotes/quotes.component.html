@@ -6,5 +6,9 @@
             <p class="margin-none">{{quote.description}}</p>
             <a href="" class="btn btn-sm btn-success">Show Quote Details</a>
         </div>
+        <div *ngIf="quotes.length < 1" class="alert alert-warning">No Quotes to Display
+            <br>
+            <a href="" class="btn btn-sm btn-success">Create Quote</a>
+        </div>
     </div>
 </div>
