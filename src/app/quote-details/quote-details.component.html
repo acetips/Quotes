@@ -1,3 +1,9 @@
 <small class="margine-none">{{quote.author}}<br>{{quote.submitter}}</small><br>
+
+<div>
+    <fa-icon [icon]="faUp" (click)='like()'></fa-icon><span>{{upvote}}</span>
+    <fa-icon [icon]="faDown"(click)='dislike()'></fa-icon><span>{{downvote}}</span>
+</div>
+<p>{{quote.day|time}}</p>
 <button (click)="deleteAQuote(true)"id="deletequote" class="btn btn-outline-danger btn-sm">Delete Quote</button>
 <br>

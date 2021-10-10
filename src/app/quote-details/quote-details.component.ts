@@ -1,5 +1,6 @@
 import { Quote } from '../quote';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-quote-details',
@@ -13,6 +14,18 @@ export class QuoteDetailsComponent implements OnInit {
 
   deleteAQuote(removeQuote: boolean){
     this.deleteQuote.emit(removeQuote);
+  }
+
+  faDown = faThumbsDown;
+  faUp = faThumbsUp;
+
+  upvote = 0;
+  like () {
+    this.upvote++;
+  }
+  downvote = 0;
+  dislike () {
+    this.downvote++;
   }
 
   constructor() { }

@@ -10,9 +10,9 @@ import { EnterQuote } from '../enter-quote';
 export class QuotesComponent implements OnInit {
 
   quotes: Quote[]=[
-    new Quote('First Quote','The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Submitted by Emelda Perez'),
-    new Quote('Second Quote','Your time is limited, so do nott waste it living someone else life.','Steve Jobs','Submitted by Samantha Lopez'),
-    new Quote('Third Quote','The way to get started is to quit talking and begin doing.','Walt Disney','Submitted by Debbie Indah'),
+    new Quote('First Quote','The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Submitted by Emelda Perez',new Date(2021,9,9)),
+    new Quote('Second Quote','Your time is limited, so do not waste it living someone else life.','Steve Jobs','Submitted by Samantha Lopez',new Date(2021,9,9)),
+    new Quote('Third Quote','The way to get started is to quit talking and begin doing.','Walt Disney','Submitted by Debbie Indah',new Date(2021,9,10)),
   ]
 
   thequote!: string;
@@ -21,7 +21,7 @@ export class QuotesComponent implements OnInit {
   newQuote: any;
 
   newquote: EnterQuote[]=[
-    new EnterQuote('Life is what happens when you are busy making other plans.','John Lennon','Winn Star')
+    new EnterQuote('Life is what happens when you are busy making other plans.','John Lennon','Winn Star',new Date(2021,9,10))
   ]
 
   showDetails(index: | any){

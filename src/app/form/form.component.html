@@ -1,11 +1,22 @@
+<div *ngFor="let newq of newQuotes,let i=index">
+    <p>{{newq.thequote}}</p>
+    <h5>{{newq.quoteauthor}}</h5>
+    <h5>{{newq.quotepublisher}}</h5>
+    <div>
+        <fa-icon [icon]="faUp" (click)='like()'></fa-icon><span>{{upvote}}</span>
+        <fa-icon [icon]="faDown"(click)='dislike()'></fa-icon><span>{{downvote}}</span>
+    </div>
+    <button (click)="deleteThisQuote($event,i)"id="deletequote" class="btn btn-outline-danger btn-sm">Delete Quote</button>
+    <br>
+</div>
  <h1>Create Quote</h1>
  <div>
-     <form (ngSubmit)='submitQuote'>
+     <form (ngSubmit)='submitQuote()'>
          <p>Enter a new quote here.</p>
          <textarea class="form-control" placeholder="Enter your quote.." name="Quote" [(ngModel)]="thequote" id="" type="text" autocomplete="off"></textarea>
          <input class="form-control" type="text" placeholder="Author eg. Nelson Mandela" name="Author" [(ngModel)]="quoteauthor" autocomplete="off">
          <input class="form-control" type="text" placeholder= "Publisher eg. Submitted by Perez" name="Publisher" [(ngModel)]="quotepublisher" autocomplete="off">
-         <button type="submit" class="btn btn-success">Submit Quote!</button>
+         <button type="submit" class="btn btn-success" >Submit Quote!</button>
      </form>
      <hr>
     <div>
@@ -15,11 +26,38 @@
     </div>
     <hr>
     <div>
-        <div *ngFor="let newq of newQuotes">
+        <!-- <div *ngFor="let newq of newQuotes">
             <p>{{newq.thequote}}</p>
             <h5>{{newq.quoteauthor}}</h5>
             <h5>{{newq.quotepublisher}}</h5>
             <br>
-        </div>
+        </div> -->
     </div>
  </div>
+
+
+
+
+
+
+
+<!-- 
+ <div class="container">
+     <h1>
+         <form (ngSubmit)="submitQuote()">
+             <div class="form-group">
+                <label for="thequote">Enter quote here..</label>
+                <input type="text" name="thequote" class="form-control"ngModel>
+            </div>
+            <div class="form-group">
+                <label for="quoteauthor">Author:</label>
+                <input type="text" name="quoteauthor" class="form-control" ngModel>
+            </div>
+            <div class="form-group">
+                <label for="quotepublisher">Publisher:</label>
+                <input type="text" name="quotepublisher" class="form-control" ngModel>
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button><pre></pre><button class="btn btn-outline-danger">Delete Quote</button>
+         </form>
+     </h1>
+ </div> -->

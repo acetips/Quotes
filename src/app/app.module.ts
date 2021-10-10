@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { FormComponent } from './form/form.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TimePipe } from './time.pipe';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { FormComponent } from './form/form.component';
     AboutComponent,
     QuotesComponent,
     QuoteDetailsComponent,
-    FormComponent
+    FormComponent,
+    TimePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
