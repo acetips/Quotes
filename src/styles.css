@@ -7,3 +7,9 @@
 #deletequote{
     border: 4rem;
 }
+textarea{
+    margin-bottom: 2rem;
+}
+input{
+    margin-bottom: 2rem;
+}
