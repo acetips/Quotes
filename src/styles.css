@@ -13,3 +13,7 @@ textarea{
 input{
     margin-bottom: 2rem;
 }
+*{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMm7avHd3mqf2szRcuI_EID9bG_C2aaj3UA&usqp=CAU);
+    background-repeat: no-repeat;
+}
