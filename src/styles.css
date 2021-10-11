@@ -14,11 +14,12 @@ input{
     margin-bottom: 2rem;
 }
 *{
+    color: white;
     background-image: url(https://besthqwallpapers.com/Uploads/30-12-2020/149719/thumb2-dark-blue-lines-background-abstract-blue-background-creative-blue-background-lines-background.jpg);
 }
 h1{
-    color: white;
+    color: rgb(153, 133, 133);
 }
 p{
-    
+    color: wheat;
 }
