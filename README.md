@@ -1,3 +1,38 @@
+# {Quotes App}
+#### Author: **{Emelda Perez}**
+## Description
+This project entails website in which you can create a quote, delete a quote, and like or dislike it by pressing the thumbs up or thumbs down icon on the webpage.
+## Setup/Installation Requirements
+## Step 1:
+install node js.
+
+Install angular with angular cli.guide to help you navigate easily.
+
+## Step 2:
+git clone https://github.com/acetips/Quotes.git to your terminal and execute it by opening with vsCode.
+
+## Step 3:
+Run ng serve to run the webpage on your browser.
+## TECHNOLOGIES USED
+* HTML
+* CSS
+* Angular JS
+## Live link
+
+https://acetips.github.io/Quotes/
+
+## BEHAVIOUR DRIVEN DEVELOPMENT
+| Behaviour      | Input        | Output       |
+| :------------- | :----------: | -----------: |
+|  Enter a quote |   Be you, do you, for you. |     |
+| Enter author name  | Anonymous |   |
+| Enter publisher name  |  Perez  |     |
+|Click the submit button|  | Quote is displayed above the form  |
+|Click the Delete Quote button| |  Quote is deleted |
+
+## Support and contact details
+For any verification or support please contact me through [emelda.perez@students.moringaschool.com]
+
 # QuotesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
