@@ -10,6 +10,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { FormComponent } from './form/form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TimePipe } from './time.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TimePipe } from './time.pipe';
     QuotesComponent,
     QuoteDetailsComponent,
     FormComponent,
-    TimePipe
+    TimePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

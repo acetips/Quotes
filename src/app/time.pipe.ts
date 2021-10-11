@@ -21,10 +21,15 @@ export class TimePipe implements PipeTransform {
       if (mins >=1 && mins < 60){
         return 'Posted '+mins +' minutes ago';
       }
+      let secToHours = 3600;
+      let hours = Math.floor(timeElapsed / secToHours);
+      if (hours >=1 && hours < 25){
+        return 'Published '+hours +' hours ago';
+      }
       let secondsInDay=86400;
       let days=Math.floor(timeElapsed/secondsInDay)
       if(days>=1){
-        return days + " day(s) passed."
+        return "Published " + days + " day(s) ago."
       }
     }
     else{

@@ -6,6 +6,7 @@
         <fa-icon [icon]="faUp" (click)='like()'></fa-icon><span>{{upvote}}</span>
         <fa-icon [icon]="faDown"(click)='dislike()'></fa-icon><span>{{downvote}}</span>
     </div>
+    <p>{{newq.day|time}}</p>
     <button (click)="deleteThisQuote($event,i)"id="deletequote" class="btn btn-outline-danger btn-sm">Delete Quote</button>
     <br>
 </div>
